@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Total Weather
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Total Weather is a one stop shop for meteorologists, weather enthusiasts, or people who just wants to know more information about upcoming weather systems. This website will include user authentication, blog posts, an about me page, and contact form to get in touch with me. In further versions, I'd like to get GOES-16 satellite imagery, various weather models with different fields (i.e. precipitation, 2m temperature, 2m sustained winds, etc.), and possibly even a forum for people to discuss upcoming weather systems or anything weather related.
 
-In the project directory, you can run:
+## Project Links
 
-### `npm start`
+- [GitHub Repo] GitHub Repo: TBD
+- [Deployment Link] Deployment Link: TBD
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Wireframes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Wireframes](https://imgur.com/a/nVzSXq9)
+- [React Architecture](https://imgur.com/a/JaxSehh)
 
-### `npm test`
+#### MVP
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Connection for Frontend/Backend
+- User Authentication
+- CRUD Actions (Blog Posts)
+- Blog Pictures
+- Contact Me Form
+- CSS Styling
+- Responsiveness
 
-### `npm run build`
+#### PostMVP
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Satellite Imagery
+- Weather Models
+- Forum
+- Text and General Animations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Component | Description | 
+| --- | :---: |  
+| App | Includes React Router and routes | 
+| Nav | Navigation bar to different components |
+| Landing | Landing page component |
+| Homepage | Home page component | 
+| Blogs | This will render the blog page component |
+| Satellite Imagery | This will render the satellite imagery component | 
+| Weather Models | This will render the weather models component |
+| Forum | This will render the forum component | 
+| About | This will render the about me component | 
 
-### `npm run eject`
+## Time/Priority Matrix
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Repos Set-up | H | 1hr | hrs | hrs |
+| Backend Set-up | H | 2hrs | hrs | hrs |
+| Nav | H | 2hrs | hrs | hrs |
+| Landing Page | H | 2hrs | hrs | hrs |
+| Homepage | H | 2hrs | hrs | hrs |
+| Blogs Page | H | 3hrs | hrs | hrs |
+| About Page | H | 2hrs | hrs | hrs |
+| General Layout | H | 2.5hrs | hrs | hrs |
+| Responsiveness | H | 3hrs | hrs | hrs |
+| General CSS Styling | H | 4hrs | hrs | hrs |
+| Login Authentication | H | 3hrs | hrs | hrs |
+| Satellite Imagery Page | M/L | 4hrs| hrs | hrs |
+| Weather Models Page | M/L | 6hrs | hrs | hrs |
+| Forum Page | L | 6hrs | hrs | hrs |
+| Animations | L | 2.5hrs | hrs | hrs |
+| Total | - | 45 hrs |  hrs | hrs |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Additional Libraries
+ReactJS, TBD
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Code Snippet
+TBD
