@@ -6,8 +6,8 @@ Total Weather is a one stop shop for meteorologists, weather enthusiasts, or peo
 
 ## Project Links
 
-- [GitHub Repo] GitHub Repo: TBD
-- [Deployment Link] Deployment Link: TBD
+- [Frontend Repo](https://github.com/ingl3585/total-weather-frontend)
+- Deployment Link: TBD
 
 ## Wireframes
 
