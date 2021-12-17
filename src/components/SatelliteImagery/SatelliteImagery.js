@@ -9,6 +9,7 @@ const SatelliteImagery = () => {
 			<Nav />
 			<div>
 				<div>Satellite Imagery Page</div>
+				<div>Coming soon...</div>
 			</div>
 		</div>
 	);

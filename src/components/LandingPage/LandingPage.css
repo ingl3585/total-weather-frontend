@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+
+.landing-page-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.nav-container {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.word-total {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    margin: auto -2.5rem;
+    transform: rotate(270deg);
+    font-family: 'Playfair Display', serif;
+    font-size: 6.5rem;
+     background: -webkit-linear-gradient(#3e78b2, #38B6FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.word-weather {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+     background: -webkit-linear-gradient(#3e78b2, #38B6FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landing-page-btns {
+    grid-column: 2/4;
+    grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    gap: 2rem;
+}
+
+.sign-in-btn {
+    border: none;
+    height: 2.25rem;
+    width: 9rem;
+    border-radius: 5%/12.5%;
+    font-family: 'Playfair Display', serif;
+    color: whitesmoke;
+    background-image: linear-gradient(#38B6FF, #3e78b2);
+}
+
+.sign-up-btn {
+    border: none;
+    height: 2.25rem;
+    width: 9rem;
+    border-radius: 5%/12.5%;
+    font-family: 'Playfair Display', serif;
+    color: whitesmoke;
+    background-image: linear-gradient(#38B6FF, #3e78b2);
+}

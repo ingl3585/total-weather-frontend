@@ -9,6 +9,7 @@ const Forum = () => {
 			<Nav />
 			<div>
 				<div>Forum Page</div>
+				<div>Coming soon...</div>
 			</div>
 		</div>
 	);

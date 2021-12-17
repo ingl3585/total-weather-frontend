@@ -9,6 +9,7 @@ const WeatherModels = () => {
 			<Nav />
 			<div>
 				<div>Weather Model Page</div>
+				<div>Coming soon...</div>
 			</div>
 		</div>
 	);
