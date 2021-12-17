@@ -1,0 +1,73 @@
+.sign-in-container {
+    max-height: 100vh;
+    width: 100vw;
+    font-family: 'Playfair Display', serif;
+}
+
+.sign-in-form-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form-title {
+    color: #3B9CDE;
+    border-bottom: 1px solid #3B9CDE;
+    width: 4.15rem;
+    font-size: 1.15rem;
+}
+.form-email {
+    border: none;
+    border-bottom: 1px solid #3B9CDE;
+    height: 2.25rem;
+    width: 16rem;
+    font-size: 1.15rem;
+    font-family: 'Playfair Display', serif;
+    color: #3B9CDE;
+}
+.form-email:focus {
+    outline: none;
+}
+.form-email::placeholder {
+    color: #3B9CDE;
+}
+.form-password {
+    border: none;
+    border-bottom: 1px solid #3B9CDE;
+    height: 2.25rem;
+    width: 16rem;
+    font-size: 1.15rem;
+    font-family: 'Playfair Display', serif;
+    color: #3B9CDE;
+}
+.form-password:focus {
+    outline: none;
+}
+.form-password::placeholder {
+    color: #3B9CDE;
+}
+.forgot-password-link {
+    font-size: 1rem;
+}
+.form-sign-in-btn {
+    border: none;
+    height: 2.25rem;
+    width: 9rem;
+    border-radius: 5%/12.5%;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    color: whitesmoke;
+    background-image: linear-gradient(#38B6FF, #3e78b2);
+}
+
+.sign-up-link {
+    color: #3B9CDE;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+}
