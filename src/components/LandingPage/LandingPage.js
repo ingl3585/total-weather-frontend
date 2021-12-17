@@ -9,7 +9,7 @@ const LandingPage = () => {
 			<Nav />
 			<div className='word-total'>Total</div>
 			<div className='word-weather'>Weather</div>
-			<form>
+			<form className='sign-in-form'>
 				<div className='tab-desk-form'>
 					<div className='form-title'>Sign In</div>
 					<input
@@ -28,9 +28,10 @@ const LandingPage = () => {
 					</button>
 					<div>
 						<div className='sign-up-link'>Don't have an account?</div>
-						<a href='#'>Sign up for free</a>
+						<a href='/sign-up'>Sign up for free</a>
 					</div>
 				</div>
+				{/* Need a whole new form for different sign-in page */}
 				<div className='landing-page-btns'>
 					<a href='/sign-in'>
 						<button className='sign-in-btn'>Sign In</button>

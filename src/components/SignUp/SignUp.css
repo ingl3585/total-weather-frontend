@@ -1,0 +1,90 @@
+.sign-up-container {
+    max-height: 100vh;
+    width: 100vw;
+    font-family: 'Playfair Display', serif;
+}
+
+.sign-up-form {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.sign-up-title {
+    color: #3B9CDE;
+    border-bottom: 1px solid #3B9CDE;
+    width: 4.15rem;
+    font-size: 1.15rem;
+}
+.sign-up-email {
+    border: none;
+    border-bottom: 1px solid #3B9CDE;
+    height: 2.25rem;
+    width: 16rem;
+    font-size: 1.15rem;
+    font-family: 'Playfair Display', serif;
+    color: #3B9CDE;
+}
+.sign-up-email:focus {
+    outline: none;
+}
+.sign-up-email::placeholder {
+    color: #3B9CDE;
+}
+.sign-up-password {
+    border: none;
+    border-bottom: 1px solid #3B9CDE;
+    height: 2.25rem;
+    width: 16rem;
+    font-size: 1.15rem;
+    font-family: 'Playfair Display', serif;
+    color: #3B9CDE;
+}
+.sign-up-password:focus {
+    outline: none;
+}
+.sign-up-password::placeholder {
+    color: #3B9CDE;
+}
+.sign-up-conf-password {
+    border: none;
+    border-bottom: 1px solid #3B9CDE;
+    height: 2.25rem;
+    width: 16rem;
+    font-size: 1.15rem;
+    font-family: 'Playfair Display', serif;
+    color: #3B9CDE;
+}
+.sign-up-conf-password:focus {
+    outline: none;
+}
+.sign-up-conf-password::placeholder {
+    color: #3B9CDE;
+}
+.terms-title {
+    color: #3B9CDE;
+    font-size: 1rem;
+}
+.sign-up-form-btn {
+    border: none;
+    height: 2.25rem;
+    width: 9rem;
+    border-radius: 5%/12.5%;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    color: whitesmoke;
+    background-image: linear-gradient(#38B6FF, #3e78b2);
+}
+.already-have-account-title {
+    color: #3B9CDE;
+}
+.log-in-link {
+    font-size: 1rem;
+}
+a {
+    font-size: 1rem;
+    text-decoration: none;
+}
