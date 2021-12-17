@@ -12,6 +12,20 @@ const Nav = () => {
 					<img className='logo-pic' src={Logo} alt='logo' />
 				</Link>
 			</div>
+			<div className='nav-links-container'>
+				<Link className='nav-links' to='/blogs'>
+					Blogs
+				</Link>
+				<Link className='nav-links' to='/satellite-imagery'>
+					Satellite Imagery
+				</Link>
+				<Link className='nav-links' to='/weather-models'>
+					Weather Models
+				</Link>
+				<Link className='nav-links' to='/about'>
+					About
+				</Link>
+			</div>
 			<div className='menu-container'>
 				<img className='menu-pic' src={Menu} alt='menu' />
 			</div>

@@ -20,7 +20,7 @@
     transform: rotate(270deg);
     font-family: 'Playfair Display', serif;
     font-size: 6.5rem;
-     background: -webkit-linear-gradient(#3e78b2, #38B6FF);
+    background: -webkit-linear-gradient(#3e78b2, #38B6FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -31,9 +31,23 @@
     margin: auto;
     font-family: 'Playfair Display', serif;
     font-size: 6rem;
-     background: -webkit-linear-gradient(#3e78b2, #38B6FF);
+    background: -webkit-linear-gradient(#3e78b2, #38B6FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+form {
+    grid-column: 2/4;
+    grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    gap: 2rem;
+}
+
+.tab-desk-form {
+    display: none;
 }
 
 .landing-page-btns {
@@ -64,4 +78,105 @@
     font-family: 'Playfair Display', serif;
     color: whitesmoke;
     background-image: linear-gradient(#38B6FF, #3e78b2);
+}
+
+@media screen and (min-width: 768px) {
+    .word-total {
+        margin: auto;
+        font-size: 9rem;
+    }
+    .word-weather {
+        font-size: 9rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .word-total {
+        margin: auto;
+        font-size: 10rem;
+    }
+    .word-weather {
+        font-size: 10rem;
+    }
+    .tab-desk-form {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        font-size: 1.15rem;
+        font-family: 'Playfair Display', serif;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    .form-title {
+        color: #3B9CDE;
+        border-bottom: 1px solid #3B9CDE;
+        width: 3.75rem;
+        margin-bottom: 0.25rem;
+    }
+    .form-email {
+        border: none;
+        border-bottom: 1px solid #3B9CDE;
+        height: 2.25rem;
+        width: 16rem;
+        font-size: 1.15rem;
+        font-family: 'Playfair Display', serif;
+        color: #3B9CDE;
+    }
+    .form-email:focus {
+        outline: none;
+    }
+    .form-email::placeholder {
+        color: #3B9CDE;
+    }
+    .form-password {
+        border: none;
+        border-bottom: 1px solid #3B9CDE;
+        height: 2.25rem;
+        width: 16rem;
+        font-size: 1.15rem;
+        font-family: 'Playfair Display', serif;
+        color: #3B9CDE;
+    }
+    .form-password:focus {
+        outline: none;
+    }
+    .form-password::placeholder {
+        color: #3B9CDE;
+    }
+    .forgot-password-link {
+        font-size: 1rem;
+    }
+    .form-sign-in-btn {
+        border: none;
+        height: 2.25rem;
+        width: 9rem;
+        border-radius: 5%/12.5%;
+        font-size: 1rem;
+        font-family: 'Playfair Display', serif;
+        color: whitesmoke;
+        background-image: linear-gradient(#38B6FF, #3e78b2);
+    }
+    .sign-up-link {
+        font-size: 1rem;
+        color: #3B9CDE;
+    }
+    a {
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .landing-page-btns {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .word-total {
+        margin: auto;
+        font-size: 11rem;
+    }
+    .word-weather {
+        font-size: 11rem;
+    }
 }
