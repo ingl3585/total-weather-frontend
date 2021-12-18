@@ -23,7 +23,9 @@ const LandingPage = () => {
 					<a className='forgot-password-link' href='#'>
 						Forgot Password?
 					</a>
-					<button className='form-sign-in-btn'>Sign In</button>
+					<button type='button' className='form-sign-in-btn'>
+						Sign In
+					</button>
 					<div>
 						<div className='sign-up-link'>Don't have an account?</div>
 						<a href='/sign-up'>Sign up for free</a>

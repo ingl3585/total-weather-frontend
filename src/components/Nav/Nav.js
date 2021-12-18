@@ -28,6 +28,9 @@ const Nav = () => {
 				<Link className='nav-links' to='/about'>
 					About
 				</Link>
+				<Link className='nav-links' to='/sign-in'>
+					Login
+				</Link>
 			</div>
 			<div className='menu-container'>
 				<img className='menu-pic' src={Menu} alt='menu' />
