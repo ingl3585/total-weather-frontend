@@ -22,6 +22,9 @@ const Nav = () => {
 				<Link className='nav-links' to='/weather-models'>
 					Weather Models
 				</Link>
+				<Link className='nav-links' to='/forum'>
+					Forum
+				</Link>
 				<Link className='nav-links' to='/about'>
 					About
 				</Link>

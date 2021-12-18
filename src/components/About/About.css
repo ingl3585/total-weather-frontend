@@ -1,0 +1,140 @@
+.contact-container {
+    max-height: 100vh;
+    width: 100vw;
+    font-family: 'Playfair Display', serif;
+}
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.about-me-title {
+    color: #3B9CDE;
+    border-bottom: 1px solid #3B9CDE;
+    width: 5rem;
+    font-size: 1.15rem;
+}
+.about-me-content {
+    margin: 0 1.50rem;
+    color: #3B9CDE;
+}
+.contact-form-container {
+    min-height: 52.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.contact-title {
+    color: #3B9CDE;
+    border-bottom: 1px solid #3B9CDE;
+    width: 6rem;
+    font-size: 1.15rem;
+}
+.first-name-form {
+    border: none;
+    border-bottom: 1px solid #3B9CDE;
+    height: 2.25rem;
+    width: 16rem;
+    font-size: 1.15rem;
+    font-family: 'Playfair Display', serif;
+    color: #3B9CDE;
+}
+.last-name-form {
+    border: none;
+    border-bottom: 1px solid #3B9CDE;
+    height: 2.25rem;
+    width: 16rem;
+    font-size: 1.15rem;
+    font-family: 'Playfair Display', serif;
+    color: #3B9CDE;
+}
+.email-form {
+    border: none;
+    border-bottom: 1px solid #3B9CDE;
+    height: 2.25rem;
+    width: 16rem;
+    font-size: 1.15rem;
+    font-family: 'Playfair Display', serif;
+    color: #3B9CDE;
+}
+.message-form {
+    border: none;
+    border-bottom: 1px solid #3B9CDE;
+    height: 2.25rem;
+    width: 16rem;
+    font-size: 1.15rem;
+    font-family: 'Playfair Display', serif;
+    color: #3B9CDE;
+}
+.first-name-form:focus {
+    outline: none;
+}
+.first-name-form::placeholder {
+    color: #3B9CDE;
+}
+.last-name-form:focus {
+    outline: none;
+}
+.last-name-form::placeholder {
+    color: #3B9CDE;
+}
+.email-form:focus {
+    outline: none;
+}
+.email-form::placeholder {
+    color: #3B9CDE;
+}
+.message-form:focus {
+    outline: none;
+}
+.message-form::placeholder {
+    color: #3B9CDE;
+}
+.contact-me-btn {
+    border: none;
+    height: 2.25rem;
+    width: 9rem;
+    border-radius: 5%/12.5%;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    color: whitesmoke;
+    background-image: linear-gradient(#38B6FF, #3e78b2);
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-container {
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+    .about-me-content {
+        margin: 0 5rem;
+        font-size: 1.15rem;
+    }
+    .contact-form-container {
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .about-me-content {
+        margin: 0 5.25rem;
+        font-size: 1.15rem;
+    }
+    .contact-form-container {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-me-content {
+        margin: 0 12rem;
+        font-size: 1.15rem;
+    }
+    .contact-form-container {
+        margin-top: 3rem;
+    }
+}
