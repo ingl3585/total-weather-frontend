@@ -26,7 +26,7 @@ const SignUp = () => {
 				<div className='already-have-account-title'>
 					Already have an account?
 				</div>
-				<a className='log-in-link' href='/'>
+				<a className='log-in-link' href='/sign-in'>
 					Log in
 				</a>
 			</div>

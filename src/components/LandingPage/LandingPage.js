@@ -23,9 +23,7 @@ const LandingPage = () => {
 					<a className='forgot-password-link' href='#'>
 						Forgot Password?
 					</a>
-					<button type='submit' className='form-sign-in-btn'>
-						Sign In
-					</button>
+					<button className='form-sign-in-btn'>Sign In</button>
 					<div>
 						<div className='sign-up-link'>Don't have an account?</div>
 						<a href='/sign-up'>Sign up for free</a>
@@ -34,10 +32,14 @@ const LandingPage = () => {
 				{/* Need a whole new form for different sign-in page */}
 				<div className='landing-page-btns'>
 					<a href='/sign-in'>
-						<button className='sign-in-btn'>Sign In</button>
+						<button type='button' className='sign-in-btn'>
+							Sign In
+						</button>
 					</a>
 					<a href='/sign-up'>
-						<button className='sign-up-btn'>Sign Up</button>
+						<button type='button' className='sign-up-btn'>
+							Sign Up
+						</button>
 					</a>
 				</div>
 			</form>
