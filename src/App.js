@@ -15,6 +15,8 @@ import SatelliteImagery from './components/SatelliteImagery/SatelliteImagery';
 import './components/SatelliteImagery/SatelliteImagery.css';
 import WeatherModels from './components/WeatherModels/WeatherModels';
 import './components/WeatherModels/WeatherModels.css';
+import Forum from './components/Forum/Forum';
+import './components/Forum/Forum.css';
 import About from './components/About/About';
 import './components/About/About.css';
 
@@ -29,6 +31,7 @@ const App = () => {
 				<Route path='/blogs' element={<Blogs />} />
 				<Route path='/satellite-imagery' element={<SatelliteImagery />} />
 				<Route path='/weather-models' element={<WeatherModels />} />
+				<Route path='/forum' element={<Forum />} />
 				<Route path='/about' element={<About />} />
 			</Routes>
 		</div>

@@ -9,6 +9,7 @@ const Blogs = () => {
 			<Nav />
 			<div>
 				<div>Blog Page</div>
+				<div>Coming soon...</div>
 			</div>
 		</div>
 	);
