@@ -1,0 +1,30 @@
+.verify-container {
+    max-height: 100vh;
+    width: 100vw;
+    font-family: 'Playfair Display', serif;
+}
+
+.verify-form-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.verify-title {
+    color: #3B9CDE;
+    font-size: 1.15rem;
+}
+
+.verify-btn {
+    border: none;
+    height: 2.25rem;
+    width: 9rem;
+    border-radius: 5%/12.5%;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    color: whitesmoke;
+    background-image: linear-gradient(#38B6FF, #3e78b2);
+}

@@ -35,7 +35,7 @@ const ResetPassword = ({ reset_password }) => {
 			<form
 				className='sign-in-form-container'
 				onSubmit={(event) => onSubmit(event)}>
-				<div className='form-title'>Change Password</div>
+				<div className='reset-form-title'>Change Password:</div>
 				<input
 					className='form-email'
 					type='email'

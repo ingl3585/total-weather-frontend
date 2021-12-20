@@ -19,11 +19,11 @@ const Activate = ({ verify }) => {
 	}
 
 	return (
-		<div className='activate-container'>
+		<div className='verify-container'>
 			<Nav />
-			<div>
-				<h1>Verify your account:</h1>
-				<button onClick={verify_account} type='button'>
+			<div className='verify-form-container'>
+				<div className='verify-title'>Verify your account:</div>
+				<button className='verify-btn' onClick={verify_account} type='button'>
 					Verify
 				</button>
 			</div>

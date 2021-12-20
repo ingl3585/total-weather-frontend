@@ -33,14 +33,14 @@ const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
 	}
 
 	return (
-		<div className='sign-in-container'>
+		<div className='password-confirm-container'>
 			<Nav />
 			<form
-				className='sign-in-form-container'
+				className='password-confirm-form-container'
 				onSubmit={(event) => onSubmit(event)}>
 				<div className='form-group'>
 					<input
-						className='form-control'
+						className='form-password'
 						type='password'
 						placeholder='New Password'
 						name='new_password'
@@ -52,7 +52,7 @@ const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
 				</div>
 				<div className='form-group'>
 					<input
-						className='form-control'
+						className='form-password'
 						type='password'
 						placeholder='Confirm New Password'
 						name='re_new_password'
@@ -62,7 +62,7 @@ const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
 						required
 					/>
 				</div>
-				<button className='form-sign-in-btn' type='submit'>
+				<button className='form-password-confirm-btn' type='submit'>
 					Reset Password
 				</button>
 			</form>
