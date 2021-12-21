@@ -57,7 +57,7 @@ hr {
 
 @media screen and (min-width: 768px) {
     .blog-page-title {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
     .blog-image {
         height: 20rem;
@@ -80,7 +80,7 @@ hr {
 }
 @media screen and (min-width: 992px) {
     .blog-page-title {
-        font-size: 1.50rem;
+        font-size: 1.15rem;
     }
     .blog-image {
         height: 25rem;
@@ -104,7 +104,7 @@ hr {
 
 @media screen and (min-width: 1200px) {
     .blog-page-title {
-        font-size: 1.50rem;
+        font-size: 1.25rem;
     }
     .blog-image {
         height: 30rem;
