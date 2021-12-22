@@ -11,7 +11,6 @@ const Blogs = () => {
 			return fetch(Url, {
 				headers: {
 					'Content-Type': 'application/json',
-					Authorization: `JWT ${localStorage.getItem('access')}`,
 				},
 			})
 				.then((response) => response.json())
