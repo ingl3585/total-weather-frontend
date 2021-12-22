@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Blogs.css';
-import Nav from '../Nav/Nav';
-import '../Nav/Nav.css';
+import NavBar from '../Nav/NavBar';
 
 const Blogs = () => {
 	const [blogs, setBlogs] = useState([]);
@@ -24,7 +23,7 @@ const Blogs = () => {
 	let blogArray = blogs.map((blog) => {
 		return (
 			<div>
-				<ol>
+				<ul>
 					<li className='blog-title'>{blog.title}</li>
 					<li className='blog-image-container'>
 						<img className='blog-image' src={blog.image} alt='blog-img' />
@@ -32,7 +31,7 @@ const Blogs = () => {
 					<li className='blog-author'>By: {blog.author}</li>
 					<li className='blog-created-at'>Created at: {blog.created_at}</li>
 					<li className='blog-content'>{blog.content}</li>
-				</ol>
+				</ul>
 				<hr />
 			</div>
 		);
@@ -40,7 +39,7 @@ const Blogs = () => {
 
 	return (
 		<div>
-			<Nav />
+			<NavBar />
 			<div className='blog-page-container'>
 				<div className='blog-page-title'>Blogs</div>
 				<div className='blog-container'>

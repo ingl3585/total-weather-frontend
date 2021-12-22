@@ -1,12 +1,11 @@
 import React from 'react';
 import './Homepage.css';
-import Nav from '../Nav/Nav';
-import '../Nav/Nav.css';
+import NavBar from '../Nav/NavBar';
 
 const Homepage = () => {
 	return (
 		<div className='homepage-container'>
-			<Nav />
+			<NavBar />
 			<div className='homepage-page-container'>
 				<div className='homepage-title'>Homepage</div>
 				<div className='current-warnings-title'>Current Warnings</div>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './About.css';
-import Nav from '../Nav/Nav';
-import '../Nav/Nav.css';
+import NavBar from '../Nav/NavBar';
 
 const About = () => {
 	const [data, setData] = useState({
@@ -41,7 +40,7 @@ const About = () => {
 
 	return (
 		<div className='contact-container'>
-			<Nav />
+			<NavBar />
 			<div className='about-me-container'>
 				<div className='about-me-title'>About Me</div>
 				<div className='about-me-content'>

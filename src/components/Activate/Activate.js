@@ -3,7 +3,7 @@ import { Navigate, useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { verify } from '../../actions/auth';
 import './Activate.css';
-import Nav from '../Nav/Nav';
+import NavBar from '../Nav/NavBar';
 
 const Activate = ({ verify }) => {
 	const [verified, setVerified] = useState(false);
@@ -20,7 +20,7 @@ const Activate = ({ verify }) => {
 
 	return (
 		<div className='verify-container'>
-			<Nav />
+			<NavBar />
 			<div className='verify-form-container'>
 				<div className='verify-title'>Verify your account:</div>
 				<button className='verify-btn' onClick={verify_account} type='button'>

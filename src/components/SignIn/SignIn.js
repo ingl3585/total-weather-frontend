@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { login } from '../../actions/auth';
 import './SignIn.css';
-import Nav from '../Nav/Nav';
+import NavBar from '../Nav/NavBar';
 
 const SignIn = ({ login, isAuthenticated }) => {
 	// Use state to store email and password
@@ -30,7 +30,7 @@ const SignIn = ({ login, isAuthenticated }) => {
 
 	return (
 		<div className='sign-in-container'>
-			<Nav />
+			<NavBar />
 			<form
 				className='sign-in-form-container'
 				onSubmit={(event) => onSubmit(event)}>

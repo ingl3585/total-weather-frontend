@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { reset_password } from '../../actions/auth';
-import Nav from '../Nav/Nav';
-import './ResetPassword.css';
+import NavBar from '../Nav/NavBar';
 
 const ResetPassword = ({ reset_password }) => {
 	const [requestSent, setRequestSent] = useState(false);
@@ -31,7 +30,7 @@ const ResetPassword = ({ reset_password }) => {
 
 	return (
 		<div className='sign-in-container'>
-			<Nav />
+			<NavBar />
 			<form
 				className='sign-in-form-container'
 				onSubmit={(event) => onSubmit(event)}>

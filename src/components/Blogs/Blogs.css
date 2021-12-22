@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
 .blog-page-container {
     max-width: 100vw;
     font-family: 'Playfair Display', serif;
@@ -17,7 +19,7 @@
     color: #3B9CDE;
 }
 
-ol {
+ul {
     list-style: none;
 }
 

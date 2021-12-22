@@ -1,12 +1,11 @@
 import React from 'react';
 import './Forum.css';
-import Nav from '../Nav/Nav';
-import '../Nav/Nav.css';
+import NavBar from '../Nav/NavBar';
 
 const Forum = () => {
 	return (
 		<div>
-			<Nav />
+			<NavBar />
 			<div>
 				<div>Forum Page</div>
 				<div>Coming soon...</div>

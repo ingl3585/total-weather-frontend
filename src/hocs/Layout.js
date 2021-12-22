@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Nav from '../components/Nav/Nav';
 import { connect } from 'react-redux';
 import { checkAuthenticated, load_user } from '../actions/auth';
 

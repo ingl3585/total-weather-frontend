@@ -3,8 +3,7 @@ import { Navigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { login } from '../../actions/auth';
 import './LandingPage.css';
-import Nav from '../Nav/Nav';
-import '../Nav/Nav.css';
+import NavBar from '../Nav/NavBar';
 
 const LandingPage = ({ login, isAuthenticated }) => {
 	// Use state to store email and password
@@ -30,7 +29,7 @@ const LandingPage = ({ login, isAuthenticated }) => {
 	}
 	return (
 		<div className='landing-page-container'>
-			<Nav />
+			<NavBar />
 			<div className='word-total'>Total</div>
 			<div className='word-weather'>Weather</div>
 			<form className='tab-desk-form' onSubmit={(event) => onSubmit(event)}>

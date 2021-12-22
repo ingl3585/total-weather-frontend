@@ -1,12 +1,11 @@
 import React from 'react';
 import './WeatherModels.css';
-import Nav from '../Nav/Nav';
-import '../Nav/Nav.css';
+import NavBar from '../Nav/NavBar';
 
 const WeatherModels = () => {
 	return (
 		<div>
-			<Nav />
+			<NavBar />
 			<div>
 				<div>Weather Model Page</div>
 				<div>Coming soon...</div>

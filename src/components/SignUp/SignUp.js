@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signup } from '../../actions/auth';
 import './SignUp.css';
-import Nav from '../Nav/Nav';
+import NavBar from '../Nav/NavBar';
 
 const SignUp = ({ signup, isAuthenticated }) => {
 	const [accountCreated, setAccountCreated] = useState(false);
@@ -37,7 +37,7 @@ const SignUp = ({ signup, isAuthenticated }) => {
 	}
 	return (
 		<div className='sign-up-container'>
-			<Nav />
+			<NavBar />
 			<form className='sign-up-form' onSubmit={(event) => onSubmit(event)}>
 				<div className='sign-up-title'>Sign Up</div>
 				<input

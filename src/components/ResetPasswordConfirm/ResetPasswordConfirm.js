@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { reset_password_confirm } from '../../actions/auth';
-import Nav from '../Nav/Nav';
-import './ResetPasswordConfirm.css';
+import NavBar from '../Nav/NavBar';
 
 const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
 	const [requestSent, setRequestSent] = useState(false);
@@ -34,7 +33,7 @@ const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
 
 	return (
 		<div className='password-confirm-container'>
-			<Nav />
+			<NavBar />
 			<form
 				className='password-confirm-form-container'
 				onSubmit={(event) => onSubmit(event)}>
