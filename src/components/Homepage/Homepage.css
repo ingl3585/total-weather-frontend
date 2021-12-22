@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: auto;
+    margin: 0 1.75rem;
     text-align: center;
     font-family: 'Playfair Display', serif;
     color: #3B9CDE;
@@ -19,33 +19,71 @@
     text-decoration: underline;
 }
 
+.homepage-blog-header, .homepage-blog-img-container, .homepage-blog-img, .homepage-blog-title, .homepage-blog-author, .homepage-blog-created-at, .homepage-blog-updated-at {
+    margin-bottom: 2rem;
+}
+
+.homepage-blog-title {
+    text-decoration: underline;
+}
+
+.homepage-blog-img-container {
+    margin: auto;
+}
+
+.homepage-blog-img {
+    max-width: 90vw;
+    border: 1px solid black;
+}
+
+.home-hr {
+    color: gray;
+}
+
+.current-warnings-img {
+    border: 1px solid black;
+}
+
+.current-surface-img {
+    border: 1px solid black;
+}
+
+.current-satellite-img {
+    border: 1px solid black;
+}
+
 @media screen and (min-width: 768px) {
     .homepage-title {
         font-size: 1.15rem;
+    }
+    .homepage-blog-img {
+        margin: auto;
+        height: 22.5rem;
+        width: 35rem;
     }
     .current-warnings-title {
         font-size: 1.10rem;
     }
     .current-warnings-img {
         margin: auto;
-        height: 25rem;
-        width: 40rem;
+        height: 22.5rem;
+        width: 35rem;
     }
     .current-surface-title {
         font-size: 1.10rem;
     }
     .current-surface-img {
         margin: auto;
-        height: 25rem;
-        width: 40rem;
+        height: 22.5rem;
+        width: 35rem;
     }
     .current-satellite-title {
         font-size: 1.10rem;
     }
     .current-satellite-img {
         margin: auto;
-        height: 25rem;
-        width: 40rem;
+        height: 22.5rem;
+        width: 35rem;
     }
 }
 
@@ -53,29 +91,34 @@
     .homepage-title {
         font-size: 1.15rem;
     }
+    .homepage-blog-img {
+        margin: auto;
+        height: 27.5rem;
+        width: 40rem;
+    }
     .current-warnings-title {
         font-size: 1.10rem;
     }
     .current-warnings-img {
         margin: auto;
-        height: 30rem;
-        width: 45rem;
+        height: 27.5rem;
+        width: 40rem;
     }
     .current-surface-title {
         font-size: 1.10rem;
     }
     .current-surface-img {
         margin: auto;
-        height: 30rem;
-        width: 45rem;
+        height: 27.5rem;
+        width: 40rem;
     }
     .current-satellite-title {
         font-size: 1.10rem;
     }
     .current-satellite-img {
         margin: auto;
-        height: 30rem;
-        width: 45rem;
+        height: 27.5rem;
+        width: 40rem;
     }
 }
 
@@ -83,28 +126,61 @@
     .homepage-title {
         font-size: 1.25rem;
     }
+    .homepage-blog-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 2fr;
+        max-height: 50vh;
+        max-width: 74.6vw;
+        gap: 2rem;
+        margin: auto;
+    }
+    .homepage-blog-header {
+        margin: auto;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .homepage-blog-img-container {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .homepage-blog-content-container {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        gap: 1rem;
+    }
+    .homepage-blog-img {
+        margin: auto;
+        height: 20rem;
+        width: 35rem;
+    }
     .current-warnings-title {
         font-size: 1.20rem;
     }
     .current-warnings-img {
         margin: auto;
-        height: 35rem;
-        width: 50rem;
+        height: 30rem;
+        width: 45rem;
     }
     .current-surface-title {
         font-size: 1.20rem;
     }
     .current-surface-img {
         margin: auto;
-        height: 35rem;
-        width: 50rem;
+        height: 30rem;
+        width: 45rem;
     }
     .current-satellite-title {
         font-size: 1.20rem;
     }
     .current-satellite-img {
         margin: auto;
-        height: 35rem;
-        width: 50rem;
+        height: 30rem;
+        width: 45rem;
     }
 }

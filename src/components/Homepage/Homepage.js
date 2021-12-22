@@ -1,13 +1,55 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Homepage.css';
 import NavBar from '../Nav/NavBar';
+import Pic from '../../images/eeee.png';
 
 const Homepage = () => {
+	const [blog, setBlogs] = useState([]);
+	useEffect(() => {
+		const Url = 'http://localhost:8000/blogs/';
+
+		const makeApiCall = (Url) => {
+			return fetch(Url, {
+				headers: {
+					'Content-Type': 'application/json',
+				},
+			})
+				.then((response) => response.json())
+				.then((data) => setBlogs(data[0]));
+		};
+		makeApiCall(Url);
+	}, []);
 	return (
 		<div className='homepage-container'>
 			<NavBar />
 			<div className='homepage-page-container'>
-				<div className='homepage-title'>Homepage</div>
+				<div className='homepage-title'>Home</div>
+				<div className='homepage-blog-container'>
+					<div className='homepage-blog-header'>Latest Blog</div>
+					<div className='homepage-blog-img-container'>
+						<img
+							className='homepage-blog-img'
+							src={blog.image}
+							alt='blog-img'
+						/>
+					</div>
+					<div className='homepage-blog-content-container'>
+						<div className='homepage-blog-title'>{blog.title}</div>
+						<div className='homepage-blog-author'>Author: {blog.author}</div>
+						<div className='homepage-blog-created-at'>
+							Created at: {blog.created_at}
+						</div>
+						<div className='homepage-blog-updated-at'>
+							Updated at: {blog.updated_at}
+						</div>
+						<div>
+							<a className='homepage-blog-link' href='/blogs'>
+								Click to view
+							</a>
+						</div>
+					</div>
+				</div>
+				<hr className='home-hr' />
 				<div className='current-warnings-title'>Current Warnings</div>
 				<img
 					className='current-warnings-img'
