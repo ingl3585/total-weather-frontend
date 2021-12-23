@@ -25,7 +25,7 @@ const LandingPage = ({ login, isAuthenticated }) => {
 	// Is the user authenticated?
 	// Redirect to home page
 	if (isAuthenticated) {
-		return <Navigate to='/home' />;
+		return <Navigate to='/total-weather-frontend/home' />;
 	}
 	return (
 		<div className='landing-page-container'>
