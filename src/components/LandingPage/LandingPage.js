@@ -25,7 +25,7 @@ const LandingPage = ({ login, isAuthenticated }) => {
 	// Is the user authenticated?
 	// Redirect to home page
 	if (isAuthenticated) {
-		return <Navigate to='/home' />;
+		return <Navigate to='/total-weather-frontend/home' />;
 	}
 	return (
 		<div className='landing-page-container'>
@@ -52,7 +52,9 @@ const LandingPage = ({ login, isAuthenticated }) => {
 					onChange={(event) => onChange(event)}
 					minLength='6'
 					required></input>
-				<a className='forgot-password-link' href='/reset-password'>
+				<a
+					className='forgot-password-link'
+					href='/total-weather-frontend/reset-password'>
 					Forgot Password?
 				</a>
 				<button className='form-sign-in-btn' type='submit'>
@@ -60,16 +62,16 @@ const LandingPage = ({ login, isAuthenticated }) => {
 				</button>
 				<div className='sign-up-link'>Don't have an account?</div>
 				<div>
-					<a href='/sign-up'>Sign up for free</a>
+					<a href='/total-weather-frontend/sign-up'>Sign up for free</a>
 				</div>
 			</form>
 			<div className='landing-page-btns'>
-				<a href='/sign-in'>
+				<a href='/total-weather-frontend/sign-in'>
 					<button type='button' className='sign-in-btn'>
 						Sign In
 					</button>
 				</a>
-				<a href='/sign-up'>
+				<a href='/total-weather-frontend/sign-up'>
 					<button type='button' className='sign-up-btn'>
 						Sign Up
 					</button>

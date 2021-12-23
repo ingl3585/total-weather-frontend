@@ -78,9 +78,3 @@ const Homepage = () => {
 };
 
 export default Homepage;
-
-<img
-	border='0'
-	width='1024'
-	height='768'
-	src='http://mag.ncep.noaa.gov/data/gfs/12/gfs_namer_012_precip_p06.gif'></img>;
