@@ -18,14 +18,14 @@ Total Weather is a one stop shop for meteorologists, weather enthusiasts, or peo
 
 - Connection for Frontend/Backend
 - User Authentication
-- CRUD Actions (Blog Posts)
-- Blog Pictures
+- Weather Blogs 
 - Contact Me Form
 - CSS Styling
 - Responsiveness
 
 #### PostMVP
 
+- Blog CRUD Actions
 - Satellite Imagery
 - Weather Models
 - Forum

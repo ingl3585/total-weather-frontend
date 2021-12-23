@@ -41,9 +41,12 @@ export default function (state = initialState, action) {
 				access: payload.access,
 				refresh: payload.refresh,
 			};
+		// Sign up success reducer
 		case SIGNUP_SUCCESS:
 			return {
+				// return the state
 				...state,
+				// return false. only return true if logging in successfully
 				isAuthenticated: false,
 			};
 		case USER_LOADED_SUCCESS:
@@ -61,6 +64,7 @@ export default function (state = initialState, action) {
 				...state,
 				user: null,
 			};
+		// Sign up fail reducer
 		case LOGIN_FAIL:
 		case SIGNUP_FAIL:
 		case LOGOUT:

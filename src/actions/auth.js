@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+// import states
+
 import {
 	LOGIN_SUCCESS,
 	LOGIN_FAIL,
@@ -125,25 +127,32 @@ export const login = (email, password) => async (dispatch) => {
 	}
 };
 
+// sign up function
+// pass in email, password, and password confirmation
 export const signup = (email, password, re_password) => async (dispatch) => {
+	// pass in headers... csrf token is a secret user specific token for security purposes. harder for other sites to steal your data essentially
 	const config = {
 		headers: {
 			'Content-Type': 'application/json',
 			'X-CSRFToken': csrftoken,
 		},
 	};
+	// pass in the JSON data
 	const body = JSON.stringify({ email, password, re_password });
 	try {
+		// post request to sign up users with the header and body data
 		const response = await axios.post(
 			`${process.env.REACT_APP_API_URL}/auth/users/`,
 			body,
 			config
 		);
+		// update the state with sign up success if successful. payload holds the actual data in the object
 		dispatch({
 			type: SIGNUP_SUCCESS,
 			payload: response.data,
 		});
 	} catch (err) {
+		// or sign up fail. no payload since sign up action failed
 		dispatch({
 			type: SIGNUP_FAIL,
 		});

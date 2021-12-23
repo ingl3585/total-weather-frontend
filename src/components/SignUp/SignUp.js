@@ -23,12 +23,13 @@ const SignUp = ({ signup, isAuthenticated }) => {
 	const onSubmit = (event) => {
 		event.preventDefault();
 		if (password === re_password) {
+			// calls the sign up action
 			signup(email, password, re_password);
+			// toggles the state
 			setAccountCreated(true);
 		}
 	};
-	// Is the user authenticated?
-	// Redirect to home page
+	// Redirect to home page if the user authenticated
 	if (isAuthenticated) {
 		return <Navigate to='/home' />;
 	}
