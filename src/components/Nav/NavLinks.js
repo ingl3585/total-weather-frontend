@@ -20,44 +20,40 @@ const NavLinks = ({ logout, isAuthenticated }) => {
 	return (
 		<div>
 			<nav className='mobile-nav-links-container'>
-				<Link className='nav-links-homepage' to='/total-weather-frontend/home'>
+				<Link className='nav-links-homepage' to='/home'>
 					Home
 				</Link>
-				<Link className='nav-links' to='/total-weather-frontend/blogs'>
+				<Link className='nav-links' to='/blogs'>
 					Blogs
 				</Link>
-				<Link
-					className='nav-links'
-					to='/total-weather-frontend/satellite-imagery'>
+				<Link className='nav-links' to='/satellite-imagery'>
 					Satellite Imagery
 				</Link>
-				<Link className='nav-links' to='/total-weather-frontend/weather-models'>
+				<Link className='nav-links' to='/weather-models'>
 					Weather Models
 				</Link>
-				<Link className='nav-links' to='/total-weather-frontend/forum'>
+				<Link className='nav-links' to='/forum'>
 					Forum
 				</Link>
-				<Link className='nav-links' to='/total-weather-frontend/about'>
+				<Link className='nav-links' to='/about'>
 					About
 				</Link>
 				{isAuthenticated ? authLinks() : guestLinks()}
 			</nav>
 			<nav className='desktop-nav-links-container'>
-				<Link className='nav-links' to='/total-weather-frontend/blogs'>
+				<Link className='nav-links' to='/blogs'>
 					Blogs
 				</Link>
-				<Link
-					className='nav-links'
-					to='/total-weather-frontend/satellite-imagery'>
+				<Link className='nav-links' to='/satellite-imagery'>
 					Satellite Imagery
 				</Link>
-				<Link className='nav-links' to='/total-weather-frontend/weather-models'>
+				<Link className='nav-links' to='/weather-models'>
 					Weather Models
 				</Link>
-				<Link className='nav-links' to='/total-weather-frontend/forum'>
+				<Link className='nav-links' to='/forum'>
 					Forum
 				</Link>
-				<Link className='nav-links' to='/total-weather-frontend/about'>
+				<Link className='nav-links' to='/about'>
 					About
 				</Link>
 				{isAuthenticated ? authLinks() : guestLinks()}

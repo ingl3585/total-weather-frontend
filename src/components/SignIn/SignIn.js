@@ -25,7 +25,7 @@ const SignIn = ({ login, isAuthenticated }) => {
 	// Is the user authenticated?
 	// Redirect to home page
 	if (isAuthenticated) {
-		return <Navigate to='/total-weather-frontend/home' />;
+		return <Navigate to='/home' />;
 	}
 
 	return (
@@ -53,9 +53,7 @@ const SignIn = ({ login, isAuthenticated }) => {
 					onChange={(event) => onChange(event)}
 					minLength='6'
 					required></input>
-				<a
-					className='forgot-password-link'
-					href='/total-weather-frontend/reset-password'>
+				<a className='forgot-password-link' href='/reset-password'>
 					Forgot Password?
 				</a>
 				<button className='form-sign-in-btn' type='submit'>

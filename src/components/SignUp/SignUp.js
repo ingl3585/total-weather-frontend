@@ -30,10 +30,10 @@ const SignUp = ({ signup, isAuthenticated }) => {
 	// Is the user authenticated?
 	// Redirect to home page
 	if (isAuthenticated) {
-		return <Navigate to='/total-weather-frontend/home' />;
+		return <Navigate to='/home' />;
 	}
 	if (accountCreated) {
-		return <Navigate to='/total-weather-frontend/sign-in' />;
+		return <Navigate to='/sign-in' />;
 	}
 	return (
 		<div className='sign-up-container'>
@@ -76,7 +76,7 @@ const SignUp = ({ signup, isAuthenticated }) => {
 				<div className='already-have-account-title'>
 					Already have an account?
 				</div>
-				<a className='log-in-link' href='/total-weather-frontend/sign-in'>
+				<a className='log-in-link' href='/sign-in'>
 					Sign in
 				</a>
 			</form>

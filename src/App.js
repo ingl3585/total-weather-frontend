@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './store';
 import Layout from './hocs/Layout';
-import './App.css';
 import LandingPage from './components/LandingPage/LandingPage';
 import SignUp from './components/SignUp/SignUp';
 import SignIn from './components/SignIn/SignIn';
@@ -14,8 +15,7 @@ import SatelliteImagery from './components/SatelliteImagery/SatelliteImagery';
 import WeatherModels from './components/WeatherModels/WeatherModels';
 import Forum from './components/Forum/Forum';
 import About from './components/About/About';
-import { Provider } from 'react-redux';
-import store from './store';
+import './App.css';
 
 const App = () => {
 	return (
@@ -23,39 +23,21 @@ const App = () => {
 			<Provider store={store}>
 				<Layout>
 					<Routes>
-						<Route path='/total-weather-frontend' element={<LandingPage />} />
+						<Route path='/' element={<LandingPage />} />
+						<Route path='/sign-up' element={<SignUp />} />
+						<Route path='/sign-in' element={<SignIn />} />
+						<Route path='/reset-password' element={<ResetPassword />} />
 						<Route
-							path='/total-weather-frontend/sign-up'
-							element={<SignUp />}
-						/>
-						<Route
-							path='/total-weather-frontend/sign-in'
-							element={<SignIn />}
-						/>
-						<Route
-							path='/total-weather-frontend/reset-password'
-							element={<ResetPassword />}
-						/>
-						<Route
-							path='/total-weather-frontend/password/reset/confirm/:uid/:token'
+							path='/password/reset/confirm/:uid/:token'
 							element={<ResetPasswordConfirm />}
 						/>
-						<Route
-							path='/total-weather-frontend/activate/:uid/:token'
-							element={<Activate />}
-						/>
-						<Route path='/total-weather-frontend/home' element={<Homepage />} />
-						<Route path='/total-weather-frontend/blogs' element={<Blogs />} />
-						<Route
-							path='/total-weather-frontend/satellite-imagery'
-							element={<SatelliteImagery />}
-						/>
-						<Route
-							path='/total-weather-frontend/weather-models'
-							element={<WeatherModels />}
-						/>
-						<Route path='/total-weather-frontend/forum' element={<Forum />} />
-						<Route path='/total-weather-frontend/about' element={<About />} />
+						<Route path='/activate/:uid/:token' element={<Activate />} />
+						<Route path='/home' element={<Homepage />} />
+						<Route path='/blogs' element={<Blogs />} />
+						<Route path='/satellite-imagery' element={<SatelliteImagery />} />
+						<Route path='/weather-models' element={<WeatherModels />} />
+						<Route path='/forum' element={<Forum />} />
+						<Route path='/about' element={<About />} />
 					</Routes>
 				</Layout>
 			</Provider>
