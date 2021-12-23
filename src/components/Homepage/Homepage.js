@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Homepage.css';
 import NavBar from '../Nav/NavBar';
-import Pic from '../../images/eeee.png';
 
 const Homepage = () => {
 	const [blog, setBlogs] = useState([]);
