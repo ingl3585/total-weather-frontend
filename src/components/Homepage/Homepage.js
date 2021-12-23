@@ -42,7 +42,9 @@ const Homepage = () => {
 							Updated at: {blog.updated_at}
 						</div>
 						<div>
-							<a className='homepage-blog-link' href='/blogs'>
+							<a
+								className='homepage-blog-link'
+								href='/total-weather-frontend/blogs'>
 								Click to view
 							</a>
 						</div>
