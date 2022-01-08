@@ -5,7 +5,7 @@ import NavBar from '../Nav/NavBar';
 const Homepage = () => {
 	const [blog, setBlogs] = useState([]);
 	useEffect(() => {
-		const Url = 'http://localhost:8000/blogs/';
+		const Url = 'https://total-weather-backend.herokuapp.com/blogs/';
 
 		const makeApiCall = (Url) => {
 			return fetch(Url, {
