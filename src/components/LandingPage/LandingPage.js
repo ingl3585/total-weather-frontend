@@ -54,7 +54,7 @@ const LandingPage = ({ login, isAuthenticated }) => {
 					required></input>
 				<a
 					className='forgot-password-link'
-					href='/total-weather-frontend/reset-password'>
+					href='#/total-weather-frontend/reset-password'>
 					Forgot Password?
 				</a>
 				<button className='form-sign-in-btn' type='submit'>
@@ -62,16 +62,16 @@ const LandingPage = ({ login, isAuthenticated }) => {
 				</button>
 				<div className='sign-up-link'>Don't have an account?</div>
 				<div>
-					<a href='/total-weather-frontend/sign-up'>Sign up for free</a>
+					<a href='#/total-weather-frontend/sign-up'>Sign up for free</a>
 				</div>
 			</form>
 			<div className='landing-page-btns'>
-				<a href='/total-weather-frontend/sign-in'>
+				<a href='#/total-weather-frontend/sign-in'>
 					<button type='button' className='sign-in-btn'>
 						Sign In
 					</button>
 				</a>
-				<a href='/total-weather-frontend/sign-up'>
+				<a href='#/total-weather-frontend/sign-up'>
 					<button type='button' className='sign-up-btn'>
 						Sign Up
 					</button>

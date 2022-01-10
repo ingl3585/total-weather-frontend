@@ -55,7 +55,7 @@ const SignIn = ({ login, isAuthenticated }) => {
 					required></input>
 				<a
 					className='forgot-password-link'
-					href='/total-weather-frontend/reset-password'>
+					href='#/total-weather-frontend/reset-password'>
 					Forgot Password?
 				</a>
 				<button className='form-sign-in-btn' type='submit'>
@@ -63,7 +63,7 @@ const SignIn = ({ login, isAuthenticated }) => {
 				</button>
 				<div className='sign-up-link'>Don't have an account?</div>
 				<div>
-					<a href='/total-weather-frontend/sign-up'>Sign up for free</a>
+					<a href='#/total-weather-frontend/sign-up'>Sign up for free</a>
 				</div>
 			</form>
 		</div>
