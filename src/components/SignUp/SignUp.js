@@ -31,7 +31,7 @@ const SignUp = ({ signup, isAuthenticated }) => {
 	};
 	// Redirect to home page if the user authenticated
 	if (isAuthenticated) {
-		return <Navigate to='/total-weather-frontend/home' />;
+		return <Navigate to='/home' />;
 	}
 	if (accountCreated) {
 		return <Navigate to='/total-weather-frontend/sign-in' />;

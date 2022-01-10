@@ -7,7 +7,7 @@ import './NavBar.css';
 const NavBar = () => {
 	return (
 		<div className='nav-bar'>
-			<Link to='/total-weather-frontend/home'>
+			<Link to='/home'>
 				<img className='logo-pic' src={Logo} alt='logo' />
 			</Link>
 			<Navigation />
