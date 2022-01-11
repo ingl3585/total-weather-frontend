@@ -13,7 +13,7 @@ const NavLinks = ({ logout, isAuthenticated }) => {
 		</Fragment>
 	);
 	const authLinks = () => (
-		<a className='nav-links' href='#!' onClick={logout}>
+		<a className='nav-links' href='/total-weather-frontend/#!' onClick={logout}>
 			Logout
 		</a>
 	);
