@@ -26,7 +26,7 @@ const ResetPassword = ({ reset_password }) => {
 	// Is the user authenticated?
 	// Redirect to home page
 	if (requestSent) {
-		return <Navigate to='/total-weather-frontend/sign-in' />;
+		return <Navigate to='/sign-in' />;
 	}
 
 	return (

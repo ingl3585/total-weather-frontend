@@ -2,7 +2,7 @@
   "name": "total-weather-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ingl3585.github.io/total-weather-frontend",
+  "homepage": "https://ingl3585.github.io/total-weather-frontend/#",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
