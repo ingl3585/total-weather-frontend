@@ -3,6 +3,7 @@ import { Navigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { reset_password } from '../../actions/auth';
 import NavBar from '../Nav/NavBar';
+import './ResetPassword.css';
 
 const ResetPassword = ({ reset_password }) => {
 	const [requestSent, setRequestSent] = useState(false);

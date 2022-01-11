@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { reset_password_confirm } from '../../actions/auth';
+import './ResetPasswordConfirm.css';
 import NavBar from '../Nav/NavBar';
 
 const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {

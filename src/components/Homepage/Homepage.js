@@ -22,7 +22,7 @@ const Homepage = () => {
 		<div className='homepage-container'>
 			<NavBar />
 			<div className='homepage-page-container'>
-				<div className='homepage-title'>Home</div>
+				<div className='homepage-title'>Homepage</div>
 				<div className='homepage-blog-container'>
 					<div className='homepage-blog-header'>Latest Blog</div>
 					<div className='homepage-blog-img-container'>

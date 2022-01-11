@@ -71,13 +71,14 @@ const SignUp = ({ signup, isAuthenticated }) => {
 					required
 				/>
 				<div className='terms-title'>
-					I agree with <a href='#'>Terms</a> and <a href='#'>Privacy</a>
+					I agree with <a href='#/total-weather-frontend/sign-up'>Terms</a> and{' '}
+					<a href='#/total-weather-frontend/sign-up'>Privacy</a>
 				</div>
 				<button className='sign-up-form-btn'>Sign Up</button>
 				<div className='already-have-account-title'>
 					Already have an account?
 				</div>
-				<a className='log-in-link' href='/total-weather-frontend/sign-in'>
+				<a className='log-in-link' href='#/total-weather-frontend/sign-in'>
 					Sign in
 				</a>
 			</form>
