@@ -15,7 +15,7 @@ const Activate = ({ verify }) => {
 	// Is the user authenticated?
 	// Redirect to home page
 	if (verified) {
-		return <Navigate to='/total-weather-frontend/home' />;
+		return <Navigate to='/total-weather-frontend/sign-in' />;
 	}
 
 	return (
