@@ -53,8 +53,9 @@
 }
 
 .homepage-blog-img-container {
-    margin: auto;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .homepage-blog-img {
