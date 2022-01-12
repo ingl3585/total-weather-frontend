@@ -44,11 +44,9 @@ const About = () => {
 			<div className='about-me-container'>
 				<div className='about-me-title'>About Me</div>
 				<div className='about-me-content'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-					ut tincidunt ipsum. Vestibulum in sem nulla. Etiam non velit sit amet
-					dolor aliquet varius. Curabitur ut nisi sed sapien mattis maximus.
-					Praesent feugiat risus ex, sit amet maximus arcu ullamcorper sit amet.
-					Integer nibh ipsum, sollicitudin vitae pharetra et, lacinia.
+					I am a meteorologist turned full-stack developer based in Denver,
+					Colorado. Interested in working together or maybe just want to stop by
+					and say hello? Send a me a message below!
 				</div>
 			</div>
 			<form className='contact-form-container' onSubmit={handleSubmit}>
