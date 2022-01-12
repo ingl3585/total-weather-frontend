@@ -126,4 +126,17 @@
         margin-right: 3rem;
         font-size: 1.25rem;
     }
+    .nav-links, .nav-links-homepage {
+        color: #3B9CDE;
+    }
+
+    .nav-links:visited {
+        text-decoration: none;
+        color: #3B9CDE;
+    }
+
+    .nav-links-homepage:visited {
+        text-decoration: none;
+        color: #3B9CDE;
+    }
 }
