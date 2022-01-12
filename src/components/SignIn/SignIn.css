@@ -7,7 +7,7 @@
 }
 
 .sign-in-form-container {
-    margin-top: 35%;
+    margin-top: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,4 +72,16 @@
 a {
     font-size: 1rem;
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .sign-in-form-container {
+        margin-top: 40%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .sign-in-form-container {
+        margin-top: 13%;
+    }
 }
