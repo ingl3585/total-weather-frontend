@@ -34,13 +34,13 @@ const Homepage = () => {
 					</div>
 					<div className='homepage-blog-content-container'>
 						<div className='homepage-blog-title'>{blog.title}</div>
-						<div className='homepage-blog-author'>Author: {blog.author}</div>
+						{/* <div className='homepage-blog-author'>Author: {blog.author}</div>
 						<div className='homepage-blog-created-at'>
 							Created at: {blog.created_at}
 						</div>
 						<div className='homepage-blog-updated-at'>
 							Updated at: {blog.updated_at}
-						</div>
+						</div> */}
 						<div>
 							<a className='homepage-blog-link' href='#/blogs'>
 								Click to view
