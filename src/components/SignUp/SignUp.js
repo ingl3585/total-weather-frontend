@@ -27,6 +27,9 @@ const SignUp = ({ signup, isAuthenticated }) => {
 			signup(email, password, re_password);
 			// toggles the state
 			setAccountCreated(true);
+			alert('Please check your email for confirmation link.');
+		} else {
+			alert('Passwords do not match. Please try again.');
 		}
 	};
 	// Redirect to home page if the user authenticated
