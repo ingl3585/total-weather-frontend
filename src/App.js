@@ -13,7 +13,6 @@ import Homepage from './components/Homepage/Homepage';
 import Blogs from './components/Blogs/Blogs';
 import SatelliteImagery from './components/SatelliteImagery/SatelliteImagery';
 import WeatherModels from './components/WeatherModels/WeatherModels';
-import Forum from './components/Forum/Forum';
 import About from './components/About/About';
 import './App.css';
 
@@ -36,7 +35,6 @@ const App = () => {
 						<Route path='/blogs' element={<Blogs />} />
 						<Route path='/satellite-imagery' element={<SatelliteImagery />} />
 						<Route path='/weather-models' element={<WeatherModels />} />
-						<Route path='/forum' element={<Forum />} />
 						<Route path='/about' element={<About />} />
 					</Routes>
 				</Layout>

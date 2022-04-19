@@ -27,8 +27,6 @@ const Blogs = () => {
 					<li className='blog-image-container'>
 						<img className='blog-image' src={blog.image} alt='blog-img' />
 					</li>
-					{/* <li className='blog-author'>By: {blog.author}</li> */}
-					{/* <li className='blog-created-at'>Created at: {blog.created_at}</li> */}
 					<li className='blog-content'>{blog.content}</li>
 				</ul>
 				<hr />

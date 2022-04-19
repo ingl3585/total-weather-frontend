@@ -32,9 +32,6 @@ const NavLinks = ({ logout, isAuthenticated }) => {
 				<Link className='nav-links' to='/weather-models'>
 					Weather Models
 				</Link>
-				<Link className='nav-links' to='/forum'>
-					Forum
-				</Link>
 				<Link className='nav-links' to='/about'>
 					About
 				</Link>
@@ -49,9 +46,6 @@ const NavLinks = ({ logout, isAuthenticated }) => {
 				</Link>
 				<Link className='nav-links' to='/weather-models'>
 					Weather Models
-				</Link>
-				<Link className='nav-links' to='/forum'>
-					Forum
 				</Link>
 				<Link className='nav-links' to='/about'>
 					About
