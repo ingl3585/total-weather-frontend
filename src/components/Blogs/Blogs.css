@@ -57,6 +57,15 @@ hr {
     color: gray;
 }
 
+.blogs-loading {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
 @media screen and (min-width: 768px) {
     .blog-page-title {
         font-size: 1.15rem;

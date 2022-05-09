@@ -79,6 +79,15 @@
     border: 1px solid black;
 }
 
+.blog-loading {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
 @media screen and (min-width: 475px) {
     .current-warnings-title {
     font-size: 1.10rem;

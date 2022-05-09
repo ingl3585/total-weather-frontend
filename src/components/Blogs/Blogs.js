@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Blogs.css';
 import NavBar from '../Nav/NavBar';
+import BeatLoader from 'react-spinners/BeatLoader';
 
 const Blogs = () => {
 	const [blogs, setBlogs] = useState([]);
@@ -34,17 +35,28 @@ const Blogs = () => {
 		);
 	});
 
-	return (
-		<div>
-			<NavBar />
-			<div className='blog-page-container'>
-				<div className='blog-page-title'>Blogs</div>
-				<div className='blog-container'>
-					<div className='blogs-container'>{blogArray}</div>
+	if (blogs) {
+		return (
+			<div>
+				<NavBar />
+				<div className='blog-page-container'>
+					<div className='blog-page-title'>Blogs</div>
+					<div className='blog-container'>
+						<div className='blogs-container'>{blogArray}</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	);
+		);
+	} else if (!blogs) {
+		return (
+			<div className='homepage-container'>
+				<NavBar />
+				<div className='blogs-loading'>
+					<BeatLoader color='#3B9CDE' />
+				</div>
+			</div>
+		);
+	}
 };
 
 export default Blogs;
