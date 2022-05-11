@@ -33,6 +33,7 @@ const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
 	// Is the user authenticated?
 	// Redirect to home page
 	if (requestSent) {
+		alert('Password has been successfully changed.');
 		return <Navigate to='/sign-in' />;
 	}
 
