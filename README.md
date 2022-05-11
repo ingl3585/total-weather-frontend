@@ -9,11 +9,12 @@ Total Weather is a one stop shop for meteorologists, weather enthusiasts, or peo
 ## Project Links
 
 - [Frontend Repo](https://github.com/ingl3585/total-weather-frontend)
+- [Backend Repo](https://github.com/ingl3585/total-weather-backend)
 - [Deployment Link](https://ingl3585.github.io/total-weather-frontend/)
 
 ## Wireframes
 
-- [Wireframes](https://imgur.com/a/nVzSXq9)
+- [Initial Wireframes](https://imgur.com/a/nVzSXq9)
 - [React Architecture](https://imgur.com/a/JaxSehh)
 
 #### MVP
