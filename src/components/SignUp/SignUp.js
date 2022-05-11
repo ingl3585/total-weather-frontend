@@ -28,7 +28,7 @@ const SignUp = ({ signup, isAuthenticated }) => {
 			// toggles the state
 			setAccountCreated(true);
 			alert('Please check your email for confirmation link.');
-		} else {
+		} else if (password !== re_password) {
 			alert('Passwords do not match. Please try again.');
 		}
 	};
