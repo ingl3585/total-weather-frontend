@@ -22,6 +22,7 @@ const ResetPassword = ({ reset_password }) => {
 		event.preventDefault();
 		reset_password(email);
 		setRequestSent(true);
+		alert('Please check your email to continue.');
 	};
 	// Is the user authenticated?
 	// Redirect to home page

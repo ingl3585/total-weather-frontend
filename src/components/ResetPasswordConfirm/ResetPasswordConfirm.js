@@ -23,8 +23,12 @@ const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
 	};
 	const onSubmit = (event) => {
 		event.preventDefault();
-		reset_password_confirm(uid, token, new_password, re_new_password);
-		setRequestSent(true);
+		if (new_password === re_new_password) {
+			reset_password_confirm(uid, token, new_password, re_new_password);
+			setRequestSent(true);
+		} else {
+			alert('Passwords need to match.');
+		}
 	};
 	// Is the user authenticated?
 	// Redirect to home page
@@ -38,6 +42,7 @@ const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
 			<form
 				className='password-confirm-form-container'
 				onSubmit={(event) => onSubmit(event)}>
+				<div className='reset-form-title'>Change Password:</div>
 				<div className='form-group'>
 					<input
 						className='form-password'
