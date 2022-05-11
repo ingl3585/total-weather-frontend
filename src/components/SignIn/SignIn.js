@@ -26,12 +26,7 @@ const SignIn = ({ login, isAuthenticated }) => {
 	// Redirect to home page
 	if (isAuthenticated) {
 		return <Navigate to='/home' />;
-	} else if (!isAuthenticated) {
-		alert(
-			'Email and password combination did match any records. Please try again.'
-		);
 	}
-
 	return (
 		<div className='sign-in-container'>
 			<NavBar />

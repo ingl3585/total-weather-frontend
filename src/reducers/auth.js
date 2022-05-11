@@ -66,6 +66,10 @@ export default function (state = initialState, action) {
 			};
 		// Sign up fail reducer
 		case LOGIN_FAIL:
+			return alert(
+				'Email and/or password do not match any records. Please try again.'
+			);
+		case LOGIN_FAIL:
 		case SIGNUP_FAIL:
 		case LOGOUT:
 			localStorage.removeItem('access');
