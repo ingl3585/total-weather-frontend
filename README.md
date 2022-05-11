@@ -4,7 +4,7 @@
 
 ## Description
 
-Total Weather is a one stop shop for meteorologists, weather enthusiasts, or people who just wants to know more information about upcoming weather systems. The first version of the website will include my weather blog posts (with all CRUD actions), user authentication, and contact form to get in touch with me. The frontend will be built using React and the backend will be built with Django. In further versions, I'd like to implement GOES-16 satellite imagery and various weather models with different fields (i.e. precipitation, 2m temperature, 2m sustained winds, etc.). [Tropical Tidbits](https://www.tropicaltidbits.com/) is the inspiration for this project. Version 1-2 will mainly focus on user authentication and weather blogs.
+Total Weather is a one stop shop for meteorologists, weather enthusiasts, or people who just wants to know more information about upcoming weather systems. The first version of the website will include my weather blog posts (with all CRUD actions), user authentication, and contact form to get in touch with me. The frontend will be built using React and the backend will be built with Django. In further versions, I'd like to implement GOES-16 satellite imagery and various weather models with different fields (i.e. precipitation, 2m temperature, 2m sustained winds, etc.). [Tropical Tidbits](https://www.tropicaltidbits.com/) is the inspiration for this project. # Version 1-2 will mainly focus on user authentication and weather blogs.
 
 ## Project Links
 
@@ -45,4 +45,4 @@ Total Weather is a one stop shop for meteorologists, weather enthusiasts, or peo
 | About | This will render the about me component | 
 
 ## Additional Libraries
-ReactJS, TBD
+React, Redux, Django
