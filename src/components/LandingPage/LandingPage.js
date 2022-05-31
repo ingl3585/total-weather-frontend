@@ -30,7 +30,7 @@ const LandingPage = ({ login, isAuthenticated }) => {
 	return (
 		<div className='landing-page-container'>
 			<NavBar />
-			<div className='word-total'>Total</div>
+			<div className='word-total shadoqw'>Total</div>
 			<div className='word-weather'>Weather</div>
 			<form className='tab-desk-form' onSubmit={(event) => onSubmit(event)}>
 				<div className='form-title'>Sign In</div>

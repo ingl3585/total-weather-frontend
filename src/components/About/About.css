@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
 .contact-container {
-    max-height: 100vh;
-    width: 100vw;
     font-family: 'Playfair Display', serif;
 }
 .about-me-container {
+    height: 75vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1.15rem;
-    padding: 0 1rem;
-    margin: 5rem 0 1.5rem 0;
     gap: 1rem;
 }
 .about-me-title {
@@ -23,6 +21,8 @@
     font-size: 1.15rem;
 }
 .about-me-content {
+    display: flex;
+    flex-direction: column;
     margin: 0 2rem;
     color: #3B9CDE;
     line-height: 2;
@@ -40,7 +40,7 @@
     width: 6rem;
     font-size: 1.15rem;
 }
-.first-name-form {
+.first-name-form, .last-name-form, .email-form, .message-form {
     border: none;
     border-bottom: 1px solid #3B9CDE;
     height: 2.25rem;
@@ -49,55 +49,10 @@
     font-family: 'Playfair Display', serif;
     color: #3B9CDE;
 }
-.last-name-form {
-    border: none;
-    border-bottom: 1px solid #3B9CDE;
-    height: 2.25rem;
-    width: 16rem;
-    font-size: 1.15rem;
-    font-family: 'Playfair Display', serif;
-    color: #3B9CDE;
-}
-.email-form {
-    border: none;
-    border-bottom: 1px solid #3B9CDE;
-    height: 2.25rem;
-    width: 16rem;
-    font-size: 1.15rem;
-    font-family: 'Playfair Display', serif;
-    color: #3B9CDE;
-}
-.message-form {
-    border: none;
-    border-bottom: 1px solid #3B9CDE;
-    height: 2.25rem;
-    width: 16rem;
-    font-size: 1.15rem;
-    font-family: 'Playfair Display', serif;
-    color: #3B9CDE;
-}
-.first-name-form:focus {
+.first-name-form:focus, .last-name-form:focus, .email-form:focus, .message-form:focus {
     outline: none;
 }
-.first-name-form::placeholder {
-    color: #3B9CDE;
-}
-.last-name-form:focus {
-    outline: none;
-}
-.last-name-form::placeholder {
-    color: #3B9CDE;
-}
-.email-form:focus {
-    outline: none;
-}
-.email-form::placeholder {
-    color: #3B9CDE;
-}
-.message-form:focus {
-    outline: none;
-}
-.message-form::placeholder {
+.first-name-form::placeholder, .last-name-form::placeholder, .email-form::placeholder, .message-form::placeholder {
     color: #3B9CDE;
 }
 .contact-me-btn {
@@ -113,35 +68,20 @@
 
 @media screen and (min-width: 768px) {
     .about-me-container {
-        margin-top: 4rem;
         gap: 2rem;
     }
     .about-me-content {
-        margin: 0 5rem;
         font-size: 1.15rem;
-    }
-    .contact-form-container {
-        margin-top: 4rem;
     }
 }
 @media screen and (min-width: 992px) {
     .about-me-content {
-        margin: 0 5.25rem;
         font-size: 1.15rem;
-    }
-    .contact-form-container {
-        margin-top: 4rem;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .about-me-content {
-        margin: 0 25rem;
-        font-size: 1.15rem;
-        text-align: center;
-    }
     .contact-form-container {
-        margin-top: 4rem;
         gap: 2rem;
     }
     .first-name-form, .last-name-form, .email-form, .message-form {

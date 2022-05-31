@@ -44,48 +44,51 @@ const About = () => {
 			<div className='about-me-container'>
 				<div className='about-me-title'>About Me</div>
 				<div className='about-me-content'>
-					I'm a meteorologist turned full-stack developer based in Denver, CO.
-					Send a me a message below!
+					<p>
+						I'm a meteorologist turned full-stack developer based in Denver, CO.
+					</p>
+					<p>Send a me a message below!</p>
 				</div>
+
+				<form className='contact-form-container' onSubmit={handleSubmit}>
+					<div className='contact-title'>Contact Me</div>
+					<input
+						className='first-name-form'
+						type='text'
+						name='firstName'
+						value={firstName}
+						onChange={handleChange}
+						placeholder='First Name'
+					/>
+					<input
+						className='last-name-form'
+						type='text'
+						name='lastName'
+						value={lastName}
+						onChange={handleChange}
+						placeholder='Last Name'
+					/>
+					<input
+						className='email-form'
+						type='text'
+						name='email'
+						value={email}
+						onChange={handleChange}
+						placeholder='Email'
+					/>
+					<input
+						className='message-form'
+						type='text'
+						name='message'
+						value={message}
+						onChange={handleChange}
+						placeholder='Message'
+					/>
+					<button type='submit' className='contact-me-btn'>
+						Submit
+					</button>
+				</form>
 			</div>
-			<form className='contact-form-container' onSubmit={handleSubmit}>
-				<div className='contact-title'>Contact Me</div>
-				<input
-					className='first-name-form'
-					type='text'
-					name='firstName'
-					value={firstName}
-					onChange={handleChange}
-					placeholder='First Name'
-				/>
-				<input
-					className='last-name-form'
-					type='text'
-					name='lastName'
-					value={lastName}
-					onChange={handleChange}
-					placeholder='Last Name'
-				/>
-				<input
-					className='email-form'
-					type='text'
-					name='email'
-					value={email}
-					onChange={handleChange}
-					placeholder='Email'
-				/>
-				<input
-					className='message-form'
-					type='text'
-					name='message'
-					value={message}
-					onChange={handleChange}
-					placeholder='Message'
-				/>
-				<button type='submit' className='contact-me-btn'>
-					Submit
-				</button>
-			</form>
 		</div>
 	);
 };

@@ -36,7 +36,8 @@ li {
 .blog-image {
     height: 12.5em;
     width: 20rem;
-    border: 1px solid black;
+    border: 1px solid gray;
+    box-shadow: 0.5rem 0.5rem 0.75rem gray;
 }
 .blog-author {
     text-align: center;

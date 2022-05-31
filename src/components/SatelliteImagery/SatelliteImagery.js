@@ -6,7 +6,7 @@ const SatelliteImagery = () => {
 	return (
 		<div>
 			<NavBar />
-			<div>
+			<div className='satellite-imagery-container'>
 				<div>Satellite Imagery Page</div>
 				<div>Coming soon...</div>
 			</div>

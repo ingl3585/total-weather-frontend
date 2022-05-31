@@ -6,7 +6,7 @@ const WeatherModels = () => {
 	return (
 		<div>
 			<NavBar />
-			<div>
+			<div className='weather-models-container'>
 				<div>Weather Model Page</div>
 				<div>Coming soon...</div>
 			</div>
