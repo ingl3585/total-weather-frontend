@@ -23,10 +23,9 @@ const Blogs = () => {
 		};
 		makeApiCall(Url);
 	}, []);
-	console.log(blogs);
 	let blogArray = blogs.map((blog) => {
 		return (
-			<div>
+			<div key={blog.title}>
 				<ul>
 					<li className='blog-title'>{blog.title}</li>
 					<li className='blog-image-container'>

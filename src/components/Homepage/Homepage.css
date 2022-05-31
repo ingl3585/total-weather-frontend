@@ -19,6 +19,10 @@
     text-decoration: underline;
 }
 
+.homepage-blog-img {
+    transition: 0.2s all ease-in-out;
+}
+
 .homepage-blog-link {
     padding: 0.6rem 1rem;
     background-color: #3B9CDE;
@@ -35,6 +39,15 @@
     margin: auto;
     height: 25vh;
     width: 80vw;
+    transition: 0.2s all ease-in-out;
+}
+
+.homepage-blog-img:hover,
+.current-warnings-img:hover,
+.current-surface-img:hover,
+.current-satellite-img:hover,
+.current-tropical-img:hover {
+    transform: scale(1.02);
 }
 
 .homepage-blog-header, .homepage-blog-img-container, .homepage-blog-img, .homepage-blog-title, .homepage-blog-author, .homepage-blog-created-at, .homepage-blog-updated-at {
@@ -178,6 +191,7 @@
         margin: auto;
         height: 40vh;
         width: 35vw;
+        transition: 0.2s all ease-in-out;
     }
     .current-imgs-container {
         display: grid;

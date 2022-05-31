@@ -32,11 +32,13 @@ const Homepage = () => {
 					<div className='homepage-blog-container'>
 						<div className='homepage-blog-header'>Latest Blog</div>
 						<div className='homepage-blog-img-container'>
-							<img
-								className='homepage-blog-img'
-								src={blog.image}
-								alt='blog-img'
-							/>
+							<a href='#/blogs'>
+								<img
+									className='homepage-blog-img'
+									src={blog.image}
+									alt='blog-img'
+								/>
+							</a>
 						</div>
 						<div className='homepage-blog-content-container'>
 							<div className='homepage-blog-title'>{blog.title}</div>
@@ -50,40 +52,48 @@ const Homepage = () => {
 					<hr className='home-hr' />
 					<div className='current-imgs-container'>
 						<div className='current-warnings-title'>Current Warnings</div>
-						<img
-							className='current-warnings-img'
-							id='us'
-							src='//forecast.weather.gov/wwamap/png/US.png'
-							usemap='#US_large_imagemap_800_500'
-							alt='current-warnings-img'
-						/>
+						<a href='https://www.weather.gov/'>
+							<img
+								className='current-warnings-img'
+								id='us'
+								src='//forecast.weather.gov/wwamap/png/US.png'
+								useMap='#US_large_imagemap_800_500'
+								alt='current-warnings-img'
+							/>
+						</a>
 						<div className='current-surface-title'>
 							Current Surface Analysis
 						</div>
-						<img
-							className='current-surface-img'
-							src='http://www.wpc.ncep.noaa.gov/noaa/national_forecast.jpg'
-							alt='National Weather Outlook'
-							name='national_forecast'
-							usemap='#m_national_forecast'
-							id='national_forecast'
-						/>
+						<a href='https://www.aviationweather.gov/progchart/sfc'>
+							<img
+								className='current-surface-img'
+								src='http://www.wpc.ncep.noaa.gov/noaa/national_forecast.jpg'
+								alt='National Weather Outlook'
+								name='national_forecast'
+								useMap='#m_national_forecast'
+								id='national_forecast'
+							/>
+						</a>
 						<div className='current-satellite-title'>
 							Current Satellite Image
 						</div>
-						<img
-							className='current-satellite-img'
-							src='https://cdn.star.nesdis.noaa.gov/GOES16/ABI/CONUS/GEOCOLOR/1250x750.jpg'
-							alt='current-satellite-img'
-						/>
+						<a href='https://www.star.nesdis.noaa.gov/goes/conus.php?sat=G16'>
+							<img
+								className='current-satellite-img'
+								src='https://cdn.star.nesdis.noaa.gov/GOES16/ABI/CONUS/GEOCOLOR/1250x750.jpg'
+								alt='current-satellite-img'
+							/>
+						</a>
 						<div className='current-tropical-title'>
 							Current Atlantic Tropical Outlook
 						</div>
-						<img
-							className='current-tropical-img'
-							src='https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png'
-							alt='current-tropical-img'
-						/>
+						<a href='https://www.nhc.noaa.gov/'>
+							<img
+								className='current-tropical-img'
+								src='https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png'
+								alt='current-tropical-img'
+							/>
+						</a>
 					</div>
 				</div>
 			</div>
