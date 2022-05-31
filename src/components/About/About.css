@@ -11,8 +11,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 1.15rem;
     padding: 0 1rem;
-    margin: 1.5rem 0;
+    margin: 5rem 0 1.5rem 0;
     gap: 1rem;
 }
 .about-me-title {
@@ -22,11 +23,11 @@
     font-size: 1.15rem;
 }
 .about-me-content {
-    margin: 0 1.50rem;
+    margin: 0 3rem;
     color: #3B9CDE;
+    line-height: 2;
 }
 .contact-form-container {
-    min-height: 52.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +121,7 @@
         font-size: 1.15rem;
     }
     .contact-form-container {
-        margin-top: 1rem;
+        margin-top: 4rem;
     }
 }
 @media screen and (min-width: 992px) {
@@ -129,16 +130,21 @@
         font-size: 1.15rem;
     }
     .contact-form-container {
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .about-me-content {
-        margin: 0 12rem;
+        margin: 0 25rem;
         font-size: 1.15rem;
+        text-align: center;
     }
     .contact-form-container {
-        margin-top: 3rem;
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+    .first-name-form, .last-name-form, .email-form, .message-form {
+        width: 20rem;
     }
 }

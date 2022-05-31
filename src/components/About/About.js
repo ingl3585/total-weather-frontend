@@ -45,8 +45,6 @@ const About = () => {
 				<div className='about-me-title'>About Me</div>
 				<div className='about-me-content'>
 					I'm a meteorologist turned full-stack developer based in Denver, CO.
-					<br />
-					<br />
 					Interested in working together or maybe just want to stop by and say
 					hello? Send a me a message below!
 				</div>

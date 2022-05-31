@@ -4,6 +4,7 @@ import NavBar from '../Nav/NavBar';
 import BeatLoader from 'react-spinners/BeatLoader';
 
 const Blogs = () => {
+	const [loading, setLoading] = useState(true);
 	const [blogs, setBlogs] = useState([]);
 	useEffect(() => {
 		const Url = 'https://total-weather-backend.herokuapp.com/blogs/';
@@ -15,11 +16,14 @@ const Blogs = () => {
 				},
 			})
 				.then((response) => response.json())
-				.then((data) => setBlogs(data));
+				.then((data) => {
+					setBlogs(data);
+					setLoading(false);
+				});
 		};
 		makeApiCall(Url);
 	}, []);
-
+	console.log(blogs);
 	let blogArray = blogs.map((blog) => {
 		return (
 			<div>
@@ -35,7 +39,7 @@ const Blogs = () => {
 		);
 	});
 
-	if (blogs) {
+	if (!loading) {
 		return (
 			<div>
 				<NavBar />
@@ -47,7 +51,7 @@ const Blogs = () => {
 				</div>
 			</div>
 		);
-	} else if (!blogs) {
+	} else if (loading) {
 		return (
 			<div className='homepage-container'>
 				<NavBar />
