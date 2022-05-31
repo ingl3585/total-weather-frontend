@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     margin: 1rem 1.5rem;
+    font-family: 'Playfair Display', serif;;
 }
 
 .logo-pic {
@@ -101,7 +102,7 @@
     }
     .nav-links, .nav-links-homepage {
         margin-right: 1.15rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: #3B9CDE;
     }
 
@@ -124,18 +125,12 @@
     }
     .nav-links, .nav-links-homepage {
         margin-right: 3rem;
-        font-size: 1.25rem;
     }
     .nav-links, .nav-links-homepage {
         color: #3B9CDE;
     }
 
-    .nav-links:visited {
-        text-decoration: none;
-        color: #3B9CDE;
-    }
-
-    .nav-links-homepage:visited {
+    .nav-links:visited, .nav-links-homepage:visited {
         text-decoration: none;
         color: #3B9CDE;
     }

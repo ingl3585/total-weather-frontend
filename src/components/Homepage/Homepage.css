@@ -91,10 +91,11 @@
     .current-warnings-img,
     .current-surface-img,
     .current-satellite-img,
-    .current-tropical-img {
+    .current-tropical-img,
+    .homepage-blog-img {
         margin: auto;
-        height: 30vh;
-        width: 60vw;
+        height: 42.5vh;
+        width: 85vw;
     }
 }
 
@@ -108,11 +109,11 @@
     .current-warnings-img,
     .current-surface-img,
     .current-satellite-img,
-    .current-tropical-img {
+    .current-tropical-img,
+    .homepage-blog-img {
         margin: auto;
-        margin-bottom: 1.5rem;
-        height: 22.5rem;
-        width: 35rem;
+        height: 45vh;
+        width: 60vw;
     }
 }
 
@@ -126,10 +127,11 @@
     .current-warnings-img,
     .current-surface-img,
     .current-satellite-img,
-    .current-tropical-img {
+    .current-tropical-img,
+    .homepage-blog-img {
         margin: auto;
-        height: 27.5rem;
-        width: 40rem;
+        height: 50vh;
+        width: 58vw;
     }
     .current-imgs-container {
         gap: 1.5rem;
@@ -137,6 +139,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .homepage-blog-container {
+        margin: 0;
+    }
     .homepage-title {
         font-size: 1.25rem;
     }
@@ -170,13 +175,14 @@
     }
     .homepage-blog-img {
         margin: auto;
-        height: 20rem;
-        width: 35rem;
+        height: 40vh;
+        width: 35vw;
     }
     .current-imgs-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 0.25fr 3fr 0.25fr 3fr;
+        max-width: 100vw;
     }
     .current-warnings-title {
         grid-column: 1/2;
@@ -201,9 +207,6 @@
     .current-satellite-img {
         grid-column: 1/2;
         grid-row: 4/5;
-        margin: auto;
-        height: 30rem;
-        width: 45rem;
     }
     .current-tropical-title {
         grid-column: 2/3;
@@ -225,7 +228,7 @@
     .current-satellite-img,
     .current-tropical-img {
         margin: auto;
-        height: 30rem;
-        width: 45rem;
+        height: 50vh;
+        width: 40vw;
     }
 }
